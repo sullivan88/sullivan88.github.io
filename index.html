@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+header {
+  background-color: #FF8C00;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #D2B48C;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Sullivan's introduction</h2>
+
+<header>
+  <h2>Sullivan</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <ul>
+      <a href="introduction.html">intro</a>
+      <p>
+      <a href="school.html">school</a>
+      <p>
+      <a href="pictures.html">pictures</a>
+      <p>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Sullivan</h1>
+
+    <p>My name is Sullivan.I studied in NTUST and majored in Informataion Management department. I am about to be 20 years old.</p>
+    </p>
+    <p>I had been to the British and the Canada which make me to broaden my horizon and activate the interest of learning foreign language .</p>
+    </p>
+    <p>My hobby is to watch the movie. I could rather eat less than spend more money on the movie tickets<p>
+  </article>
+</section>
+
+<footer>
+  <p>Stay hungry Stay foolish</p>  
+</footer>
+
+</body>
+</html>
+
